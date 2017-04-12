@@ -196,6 +196,7 @@ done < $varInFile
 
 mv $varOutPath$varTempFile ${varOutPath}unsorted.txt
 cat ${varOutPath}unsorted.txt | sort -V | uniq > $varOutPath$varTempFile
+cp $varOutPath$varTempFile ${varOutPath}up-hosts-and-ports.txt
 rm ${varOutPath}unsorted.txt
 
 # Create summary file
